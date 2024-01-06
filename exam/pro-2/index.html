@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function res(){
+            let maths = parseInt(prompt("enter maths marks"))
+            let since = parseInt(prompt("enter since marks"))
+            let eco = parseInt(prompt("enter eco marks"))
+
+            let total =  maths+since+eco
+            let res = ((total/300)*100)
+            if(res<33){
+                console.log("C Grade");
+                console.log(res+"%");
+            }else if (res < 50 && res > 33) {
+                console.log("B Grade");
+                console.log(res+"%");
+                
+            }else if(res >50){
+                console.log("A Grade");
+                console.log(res+"%");
+            }
+        }res()
+    </script>
+</body>
+</html>
